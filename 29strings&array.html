@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            //JavaScript is a dynamic type language, means you don't need to specify type of the variable because it is dynamically used by JavaScript engine. You need to use var here to specify the data type. It can hold any type of values such as numbers, strings etc. For example:
+            // data types means hold the values
+            // numerical data type holds the number
+            // string data type which can hold the string
+            // there are two type of date types
+            // 1.primitive data type 2.non primitive data type
+            //1.primitive data type are a)numbers or numerical value
+            //                          b)string
+            //                          c)boolean
+            //                          d)undefined
+            //                          c)null
+            //numerical data tyope example
+            var x=100;//numerical
+            console.log(x);
+            console.log(typeof(x));
+            var y="prakash";//string
+            console.log(y);
+            console.log(typeof(y));
+            //strings are for storing and manupulation text with inside quotes"text"
+            //string methods or operators
+            //string lenth & index
+            var x="prakash";
+            console.log(x.length);// output is  7
+            console.log(x.indexOf("h"));// indexof h is 6
+            //string slice and replace
+            var y="prakashisacivilengineeringgraduate";
+            console.log(y.slice(8,16));// output "sacivile" 8to16 char are sliced
+            console.log(y.replace("civil","mechanical"));//prakash is mechanical engineering graduate
+            //string touppercase() , tolowercase()
+            var a="abcdefghti";
+            console.log(a.toUpperCase());//ABCDEFGHI
+            var a="ABCDEFGHI";
+            console.log(a.toLowerCase());//abcdefghi
+            //string trim(),trimstart(),trimend()
+            var h="   anand maharaj  ";
+            console.log(h.trim());//anand maharaj
+            console.log(h.trimStart());//anand maharaj
+            console.log(h.trimEnd());//   anand maharaj
+            //string charAt(),concat()
+            var b="i am nature lover";
+            var c="and my destiny place is kerala"
+            console.log(b.charAt([6]));//u
+            console.log(b.concat(" ",c));// i am nature lover and my destiny place is kerala
+            //string split()
+            var d="javascriptis";
+            console.log(d.split("is"));
+            //string include();
+            var c="reactjsclass";
+            console.log(c.includes("s"));//true
+            console.log(c.includes("w"));// false
+            // Array and its methods or operators
+            //array is an object that represent a collelection of similar type of elements
+            //methods or operators in array
+            //length(),indexOf()
+            var names=["madhu","krishna","prakash","hary","narayana"];
+            console.log(names.length);//5
+            console.log(names.indexOf("prakash"));//2
+            //array join(),reverse()
+            console.log(names.join(","));//madhu,krishna,praksh,hary,narayana,
+            console.log(names.reverse());//"narayana","hary","prakash","krishna","madhu"
+            //array push(),concat()
+            var names2=["raja","ram","mohan"];
+            console.log(names.push("kiran"));//leagth 6
+            console.log(names);//"narayana","hary","prakash","krishna","madhu","kiran"
+            console.log(names.concat(names2));//"narayana","hary","prakash","krishna","madhu","kiran","raj","ram","mohan"
+            //array fill(),include()
+            //console.log(names.fill("sravan anna",2,4));//["narayana","hary","sravan anna","sravan anna","madhu","kiran]
+            console.log(names.includes("madhu"));//true
+            //array slice(),sort()
+            console.log(names.slice(1,3));//hary index(1),prakash length(3)
+            console.log(names.sort());
+            // array filter(),map(),flatmap()
+            //array filter()
+            //It returns the new array containing the elements that pass the provided function conditions.
+            var marks=[50,40,45,37,20];  
+  
+           console.log(marks.filter(check));  
+           //array map()
+           //The JavaScript array map() method calls the specified function for every array element and returns the new array. This method doesn't change the original array.
+           var arr=[2,4,6];  
+           var result=arr.map(x=>x*3);  
+           console.log(result);  
+           //array flatmap();
+           //It maps all array elements via mapping function, then flattens the result into a new array.
+           var arr1=['a','b','c','d'];  
+           var arr2=[1,2,3,4];  
+            var newArr=arr1.flatMap((arr1,index)=>[arr1,arr2[index]]); //It will map and flatten arr1 and arr2.  
+           console.log("After applying the method <br>" +newArr);  
+           
+
+
+        </script>
+    </body>
+</html>
