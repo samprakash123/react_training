@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            //conditional statements "if els","else if","switch"
+
+            //Use if to specify a block of code to be executed, if a specified condition is true
+            //Use else to specify a block of code to be executed, if the same condition is false
+           //Use else if to specify a new condition to test, if the first condition is false
+          //Use switch to specify many alternative blocks of code to be executed
+           var x=100;
+            if(x==10){
+             console.log("x is equal to 10");
+            }else {
+                console.log(" x is equal to 100");//x equal to 100
+            }
+            console.log(`------------------------------`);
+            var a=10;
+            var b=20;
+            if(a==b){
+                console.log("a is equal to b");
+            }else {
+                console.log("a is not equal to b")//a not equal to b
+            }
+            
+            var a=100;
+            var b=200;
+            if(a==b){
+                console.log("a is equal to b");
+            }
+            else if(a>b){
+                console.log("a is less than b");
+            }
+            else{
+                console.log("conditions are all false");//conditions are all false
+            }
+
+            var day="monday"
+            var result;
+            switch(day){
+            case"sunday":
+            result="sunday";
+            break;
+            case"monday":
+            result="monday";
+            break;
+            case"tuesday":
+            result="tuesday";
+            break;
+            case"wednesday":
+            result="wednesday";
+            break;
+            case"friday":
+            result="friday";
+            break;
+            case"saturday":
+            result="saturday";
+            break;
+            default:
+            result="undifind";
+
+            }
+            console.log(result);//monday
+            
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </script>
+    </body>
+</html>
