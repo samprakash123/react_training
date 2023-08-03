@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+ // (1)Q  //printing all the values of an array using for loop,map,filter,for each;
+            var myArray = [10, 20, 30, 40, 50,60,70,80,90,100];
+            for (let i = 0; i < myArray.length; i++) {
+             console.log(myArray[i]);
+           }
+           console.log(`-----------------------------------------`);
+           //by map method
+           var myArray1=myArray.map(function(value){
+              console.log(value);
+              return value;
+           });
+           console.log(`-----------------------------------------`);
+           var myArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+           var filteredArray = myArray.filter(function(value) {
+           return value;
+                });
+           console.log(filteredArray);
+           console.log(`-----------------------------------------`);
+           //by for each
+           var myArray = [1, 2, 3, 4, 5];
+            myArray.forEach(function(value){
+            console.log(value);
+             });
+         console.log(`-----------------------------------------`);
+//(2)Q  //print odd numbers,even numbers by the mathod of for loop
+         var mahesh=[1,2,3,4,5,6,7,8,9,10];
+         for(i=0;i<=mahesh.length;i++){
+            if(mahesh[i]%2==0){
+                console.log(mahesh[i]);
+            }};
+            console.log(`-----------------------------------------`);  
+            for(i=0;i<=mahesh.length;i++){
+            if(mahesh[i]%2!==0){
+                console.log(mahesh[i]);
+            }};
+            console.log(`-----------------------------------------`);
+            //by filter method
+            var emahesh=mahesh.filter(function(value){
+                return value %2==0;
+            });
+            console.log(emahesh);
+            var emahesh=mahesh.filter(function(value){
+                return value %2!==0;
+            });
+            console.log(emahesh);
+            console.log(`------------------------------`);
+          //for each method
+          mahesh.forEach(function(value){
+          if (value % 2 === 0) {
+           console.log(value);
+            }
+            });
+            console.log(`--------------------------`);
+            mahesh.forEach(function(value){
+                if(value % 2!==0){
+                    console.log(value);
+                }
+            });
+            console.log(`-----------------------------------------`);
+//(3)Q      //printing reverse order forloop
+            var mahesh=[1,2,3,4,5,6,7,8,9,10];
+             for (var i = mahesh.length - 1; i >= 0; i--) {
+               console.log(mahesh[i]);
+                }
+             console.log(`--------------------------------------`);   
+ //(7)Q     //sorting array
+             var prakash=["mohan","rajesh","madhu","roshan"];
+             console.log(prakash.sort());
+             console.log(`----------------------------------------`);
+              for (var i = 1; i < 100; i =  i+ 2) {
+                   console.log(i);
+                  };
+            console.log(`-------------------------------`); 
+//(9)Q      //Print the multiplication table with 7
+            var multiplication=7;
+            for(i=1;i<=10;i++){
+                console.log(multiplication*i);
+            }
+            console.log(`------------------------`);
+           //7th table flatmap
+        
+           var table=[1,2,3,4,5,6,7,8,9,10];
+           var newArr = table.flatMap((x)=>x* 7);
+           console.log(newArr);
+
+
+//(10)Q    //sum of numbers from 1 to 10
+           //by loop method
+           var n=10;
+           for(var i=1;i<=10;i++)
+           {
+            sum = ((n*(n+1))/2);
+           }
+           console.log(sum);//55
+//(8)Q     // odd number < than 100
+           for (let i = 1; i < 100; i++) {
+            if(i%2!==0){
+            console.log(i);
+            } };
+            console.log(`-------------------------------`);
+//(11)Q      //the sum of odd numbers greater than 10 and less than 30
+            var sum=0;
+            for(var i=11;i<30;i++){
+            if(i%2!==0){
+                console.log(i);
+                sum +=i;
+            }};
+            console.log(sum);//200
+            console.log(`-------------------`);
+//(12)Q     //average of the number in an array of number
+            var numbers=[10,11,12,13,14,15];
+            sum=0;
+            for(var i=0;i<numbers.length;i++){
+              sum +=numbers[i];  
+            }
+            var average =sum /numbers.length;
+            console.log(average);//12.5
+            console.log(`---------------------------`);
+//(13,14)Q    //print the positive number from the given array
+            var numbers = [10, -5, 7, -3, 15, -8, 0, 9, -2];
+
+             for (let i = 0; i < numbers.length; i++) {
+             if (numbers[i] > 0) {
+              console.log(numbers[i]);
+               }
+                    };
+            var numbers = [10, -5, 7, -3, 15, -8, 0, 9, -2];
+            for (var i=0;i<numbers.length;i++){
+                if(numbers[i]<0){
+                    console.log(numbers[i]);
+                };
+            };
+        
+            
+
+            
+
+
+        
+
+            
+           
+
+        
+        </script>
+    </body>
+</html>
